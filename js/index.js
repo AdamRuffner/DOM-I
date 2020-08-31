@@ -40,3 +40,63 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//nav
+const nav = document.querySelector('nav')
+const navItem1 = nav.querySelector('a:nth-of-type(1)');
+const navItem2 = nav.querySelector('a:nth-of-type(2)');
+const navItem3 = nav.querySelector('a:nth-of-type(3)');
+const navItem4 = nav.querySelector('a:nth-of-type(4)');
+const navItem5 = nav.querySelector('a:nth-of-type(5)');
+const navItem6 = nav.querySelector('a:nth-of-type(6)');
+
+navItem1.textContent = siteContent.nav['nav-item-1']
+navItem2.textContent = siteContent.nav['nav-item-2']
+navItem3.textContent = siteContent.nav['nav-item-3']
+navItem4.textContent = siteContent.nav['nav-item-4']
+navItem5.textContent = siteContent.nav['nav-item-5']
+navItem6.textContent = siteContent.nav['nav-item-6']
+
+//nav change color
+const newColor = document.querySelectorAll('a')
+newColor.forEach(nav =>{
+nav.style.color ='green'
+})
+
+//nav .append
+
+const headerEl = document.querySelector('nav')
+const newNav = document.createElement('a')
+newNav.textContent = 'New'
+headerEl.appendChild(newNav)
+
+//nav .prepend
+
+const newest = document.createElement('a')
+newest.textContent = 'Hello'
+headerEl.prepend(newest)
+
+//cta 
+
+const cta =  document.querySelector('.cta')
+const main =  cta.querySelector('h1')
+const ctaBtn = cta.querySelector('button')
+const ctaImg = cta.querySelector('#cta-img')
+
+main.textContent = siteContent.cta['h1']
+ctaBtn.textContent = siteContent.cta['button']
+ctaImg.src = siteContent.cta['img-src']
+
+//main-content
+
+
+
+
+
+
+
+
+
+
+
+
